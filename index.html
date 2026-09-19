@@ -3,40 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario con validacion en JS</title>
+    <title>Formulrio con validación en JS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="contenedor">
-      <h2>Rregistrar producto</h2>
+      <h2>Registrar Producto</h2>
 
       <form id="formInventario">
         <div class="grupo-input">
-          <label for="producto" n>Nombre Producto</label>
-          <input
-            type="text"
-            id="Producto"
-            placeholder="Ej: Teclado Mecánico "
-          />
-          <span class="mensaje-Error" id="error-producto"></span>
+          <label for="producto">Nombre Producto</label>
+          <input type="text" id="producto" placeholder="Ej: Teclado Mecánico" />
+          <span class="mensaje-error" id="errorProducto"></span>
         </div>
 
         <div class="grupo-input">
-          <label for="producto" n>Cantidad en stok</label>
-          <input type="number" id="Cantidad" placeholder="Ej: 10" />
-          <span class="mensaje-Error" id="error-cantidad"></span>
+          <label for="cantidad">Cantidad en stok:</label>
+          <input type="number" id="cantidad" placeholder="Ej: 10" />
+          <span class="mensaje-error" id="errorCantidad"></span>
         </div>
 
         <div class="grupo-input">
-          <label for="producto" n>Precio unitario ($)</label>
-          <input type="number" id="Precio" placeholder="Ej: 10" />
-          <span class="mensaje-Error" id="error-precio"></span>
+          <label for="precio">Precio unitario ($):</label>
+          <input type="number" id="precio" placeholder="Ej: 10" />
+          <span class="mensaje-error" id="errorPrecio"></span>
         </div>
 
         <button type="submit">Guardar Producto</button>
         <p id="mensajeExito" class="mensaje-exito"></p>
       </form>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
